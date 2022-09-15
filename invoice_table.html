@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Table</title>
+<style>
+    body {
+        max-width: 10%;
+    }
+    fieldset {
+        background-color: #eeeeee;
+    }
+    div {
+        margin-bottom: px;
+        padding: 1px;
+    }
+    label {
+        display: inline-block;
+        width: 90px;
+    }
+  
+    table, th, td {
+        border: 1px solid rgb(2, 134, 241);
+    }
+    td, th {
+        text-align: left;
+        padding: 8px;
+    }
+    thead {
+        color:aliceblue;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 5px;
+    }
+
+    legend {
+        font-style: italic;
+        padding: 15px 1px;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-style:italic;
+    }
+</style>
+
+</head><body>
+    <form action="https://goggle.com" target="_blank">
+<fieldset>
+    <legend style="text-align:center; background-color: gray;">Invoice Details</legend>
+<div>
+    <div><label for="email"> Email</label>
+    <input type="email" name="email" maxlength="30" id="email" placeholder="Enter your Email" required=""></div>
+<form action="/action_page.php">
+    <label for="invoice#">Invoice #</label>
+    <input type="text" name="invoice#" maxlength="15" required>
+</div>
+<div><label for="contact#">Contact #:</label>
+    <input type="text" name="contact#" maxlength="12"></div>
+<div><label for="date">Date:</label>
+    <input type="date" id="birthday" name="birthday" maxlength="30" required placeholder=""></div>
+
+<table style="width:800px;border:none;">
+<thead style="text-align:center; background-color: rgb(12, 81, 184);">
+<tr>
+    <th colspan="1"style="text-align:center; width:50%; ">Item Description</th>
+    <th colspan="1" style="text-align:center;">Qty</th>
+    <th colspan="1" style="text-align:center;">Unit Price</th>
+    <th colspan="1" style="text-align:center;">Price</th>
+</tr></thead>
+
+<tbody>
+<tr>
+<td><textarea name="description1" maxlength="100" style="width: 100%"></textarea></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value="" placeholder="$"></td></tr>
+
+<tr><td><textarea name="description2" maxlength="100" style="width: 100%"></textarea></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value="" placeholder="$"></td></tr>
+
+<tr><td><textarea name="description3" maxlength="100" style="width: 100%"></textarea></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value="" placeholder="$"></td></tr>
+
+<tr><td><textarea name="description4" maxlength="100" style="width: 100%"></textarea></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value=""></td>
+<td><input type="number" value="" placeholder="$"></tr>
+
+<tr><td colspan="3" style="text-align: right;">Invoice Subtotal</td>
+<td><input type="number" value="" placeholder="$"></td></tr>
+
+<tr><td colspan="3" style="text-align: right; background-color: rgb(151, 189, 245);">Tax Rate</td>
+<td><input type="number" value="" placeholder=""></td></tr>
+
+<tr><td colspan="3" style="text-align: right;">Salex Tax</td>
+<td><input type="number" value="" placeholder="$"></td></tr>
+
+    <tr><td colspan="3" style="text-align: right; background-color: rgb(151, 189, 245);">Other</td>
+    <td><input type="number" value="" placeholder=""></td></tr>
+
+    <tr><td colspan="3" style="text-align: right;">Deposit Received</td>
+    <td><input type="number" value="" placeholder=""></td></tr>
+
+    <tr><td colspan="3" style="text-align: right; background-color: rgb(151, 189, 245);">TOTAL</td>
+    <td><input type="number" value="" placeholder="$"></td></tr>
+</tbody>
+</table>
+                
+<div><fieldset>
+    <legend>Additional Details</legend>
+
+<div><label>Payment Method:</label>
+<select id="select_payment_method" name="select_payment_method" style="width: 200px;" required>
+    <option disabled="" selected="">-- Select Payment Method --</option>
+    <option value="S">Cash.</option>
+    <option value="M">Debit cards.</option>
+    <option value="W">Credit cards.</option>
+    <option value="D">Mobile payments.</option>
+</select></div>
+
+<div><fieldset>
+<legend>Home or Office</legend>
+<label for="home">Home</label>
+<input type="radio" id="home"  name="address" value="0"><br/>
+
+<label for="office">Office</label>
+<input type="radio" id="office"  name="address" value="1"/></div>
+
+<div class="form-group">
+<p>Any comments or suggestions?</p>
+<textarea id="comments" class="input-textarea" name="comment" style="width: 100%" placeholder="Enter your comment here..."></textarea></div>
+</div>
+<div><input type="submit"></div>
+
+</form>
+</fieldset>
+</body>
+</html>
