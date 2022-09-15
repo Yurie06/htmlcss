@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML PAge</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid rgb(32, 12, 211);
+        }
+
+        p>span {
+            font-weight: 700;
+            font-style: italic;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main" class="page-wrapper">
+
+        <iframe src="exercise_1.html" width="300" height="250"></iframe>
+
+        <h1>Hello World!!</h1>
+        <h2>Hello World!!</h2>
+        <h3>Hello World!!</h3>
+        <h4>Hello World!!</h4>
+        <h5>Hello World!!</h5>
+        <h6>Hello World!!</h6>
+
+
+        <p>This is an Example of a webpage.</p>
+
+        <!-- this is a comment -->
+
+        <img src="image 21.jpg" height="auto" width="400" alt="This is a sample image" title="luffy">
+
+
+        <div>
+            <a href="https://www.google.com" target="_blank" tooltip="Go to Goggle">Goggle</a>
+            <a href="https://www.facebook.com">Facebook</a>
+        </div>
+
+        <p>Please see image at <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+        <p>Please see image at Facebook</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+
+        <table style="width:800px;border:none;">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: left;color: blue;">KING HEAD</th>
+                    <th colspan="2" style="text-align: right;color: red">QUEEN HEAD</th>
+                </tr>
+        <tr style="background-color:gray;">
+            <th style="width:100px;height:100px;background-color:rgb(224, 10, 153);">Header 1</th>
+            <th style="width:30%;">Header 2</th>
+            <th style="width:10%;">Header 3</th>
+            <th style="width:20%;">Header 4</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2" colspan="3">Cell 1</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tbody>
+        </tr>
+    
+
+    </table>
+
+    <p>My <span>child</span> You are so amazing.</p>
+        <span></span>
+
+        <form>
+
+            <button>Click Me</button>
+
+        </form>
+
+    <div>
+    <header></header>
+
+    <nav></nav>
+    </div>
+
+    <div>
+        <aside></aside>
+     <!-- banner -->
+    <section>
+
+    </section>
+
+    <!-- main content -->
+    <section></section>
+        <form action="https://goggle.com" target="_blank" method="GET">
+
+  <div>
+    <fieldset>
+              <legend>Login Details</legend> 
+    </fieldset>
+
+            
+            <label>First Name:</label>
+            <input type="text" name="first_name" maxlength="30" required placeholder="First Name">
+            <input type="text" name="Last_name" maxlength="30" required placeholder="Last Name">
+            <input type="text" name="middle_initial" maxlength="1" placeholder="Mi">
+        </div>
+        <di>
+           
+            <label>Email:</label>
+            <input type="email" name="email">
+            <input type="password" name="password">
+            <input type="password" name="password_confirm"/>
+        </di>
+        <div>
+            <input type="number" name="age" placeholder="Age"/>
+            <input type="date" name="birthdate"/>
+
+            <input id="agremment" type="checkbox" name="agree"/>
+            <label for="agree">I have read</label>
+</div>
+<div>
+    <fieldset>
+        <legend>Login Details</legend>
+        <input id="chk_1" type="checkbox" name="check_option" value="1"/>
+        <label for="chk_1">Check 1</label>
+        <input id="chk_2" type="checkbox" name="check_option" value="2"/>
+        <label for="chk_2">Check 2</label>
+        <input id="chk_3" type="checkbox" name="check_option" value="3"/>
+        <label for="chk_3">Check 3</label>
+        </fieldset>
+</div>
+<div>
+    <input id="raido_1" type="color" name="radio_option" value="1"/>
+            <input type="checkbox">Radio 1</label>
+            <input id="raido_2" type="radio" name="radio_option" value="2"/>
+            <input type="checkbox">Radio 2</label>
+</div>
+<div>
+    <select name="Status" style="width: 150px;" required>
+        <option value="">--Select Status--</option>
+        <option value="S" selected>Single</option>
+        <option value="M">Married</option>
+        <option value="W">Window</option>
+        <option value="D">Divorced</option>
+        </select>
+</div>
+
+<div>
+    <textarea name="remarks" placeholder="Please type any remarks" rows="10" cols="50" maxlength="300"></textarea>
+</div>
+</fieldset>
+
+    <fieldset>
+        <legend>Attachment 1</legend>
+        <input type="file" name="att_1" accept=".pdf">
+    </fieldset>
+    <fieldset>
+       <legend>Attachment 2</legend>
+        <input type="file" name="att_2">
+    </fieldset>
+
+    <div>
+            <input type="button" value="Submit"/>
+
+            <input type="submit" value="Submit This"/>
+
+            <input type="hidden" name="id" value="1"/>
+        
+
+       </div>
+        </form>
+
+    <article></article>
+</div>
+    <!-- footer -->
+    <section>
+
+    </section>
+
+
+</body>
+
+</html>
