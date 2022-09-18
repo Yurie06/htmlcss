@@ -1,0 +1,145 @@
+body {
+    margin: auto;
+}
+
+.page-wrapper {
+    max-width: 1024px;
+    background-color: rgb(129, 160, 196);
+    margin: 0 auto;
+    padding: 15px;
+    padding-left: 30px;
+    padding: 15px 15px 15px 30px;
+}
+
+header {
+    height: 50px;
+    width:  100%;
+    background-color: rgb(7, 58, 116);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    
+}
+
+.banner {
+    height: 600px;
+    background-color: blanchedalmond;
+    background-image: url("../IMG_20220828_225334_813.jpg");
+    background-image: cover;
+    background-position: top;
+    background-size: 1100px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    color:rgba(240, 248, 255, 0.897);
+    
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 60px;
+    font-size: 46px;
+    border-top-style:groove;
+
+}
+
+h2 {
+    color: rgb(9, 16, 82);
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-me p {
+    font-size: 20px;
+    line-height: 20px;
+    color:aliceblue
+}
+
+.d-none {
+    display: none;
+}
+
+.d-inline {
+    width: 250px;
+    display: inline-block;
+    background-color:rgb(20, 85, 85);
+}
+
+.flex {
+    display: flex;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline.d2 {
+    width: 400px;
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+.d-none, .d-inline {
+    font-size: 16px;
+}
+
+section .d-inline {
+    color: rgb(128, 30, 30);
+}
+
+section>.d-inline {
+    color: brown;
+    text-align: center;
+}
+section>div>.d-inline {
+    color: rgb(2, 0, 0);
+}
+
+section>.d-inline
+ul {
+    font-size: 15px;
+
+}
+
+.with-direction {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+.with-direction>div{
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+section.my-portfolio div {
+    background-color: rgb(225, 225, 230);
+    line-height: 50px;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    padding: 1px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 4px 4px #00A4BD, 8px 8px #FF7A59, 12px 12px #334758;
+    
+}
+
+h4 {
+    color: #1E90FF;
+    font-style: oblique;
+    text-align: center;
+}
