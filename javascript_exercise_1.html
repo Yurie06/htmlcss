@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro To JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="./js/kodego.js"></script>
+    </head>
+    <style>
+        body {
+            display: block;
+            width: 300px;
+            margin: 20rem auto;
+            font-size: 20px;
+            background-color: azure;
+        }
+    </style>
+
+<body>
+    <label>JavaScript Hands on Exercise 1 </label> <br> <br>
+    <input type="number" id="number1" placeholder="Only Accept Numbers">
+    <button type="submit" onclick="odd_even()">Check Here</button>
+    <div id="show1"></div>
+    <br>
+    <input  type="text" id="number2" placeholder="Single Character" maxlength="1">
+    <button onclick="vowel_con()">Check Here</button>
+    <div id="show2"></div>
+  
+</body>
+
+<script>
+
+    function odd_even(){
+        let x = parseInt(document.getElementById("number1").value);
+        if((x % 2) == 0) {
+            document.getElementById("show1").innerHTML = "the number is even";
+        }
+        else {
+            document.getElementById("show1").innerHTML = "the number is odd";
+        }
+    }
+
+
+
+
+    function vowel_con(){
+        let a = (document.getElementById("number2").value).toLowerCase();
+        if(a == "a" || a == "e" || a == "i" || a == "o" || a == "u") {
+            document.getElementById("show2").innerHTML = "the letter is vowel";
+        }
+        else {
+            document.getElementById("show2").innerHTML = "the letter is consonant";
+        }
+    }
+
+</script>
+</html>
