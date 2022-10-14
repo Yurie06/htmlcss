@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro To JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="./js/kodego.js"></script>
+    </head>
+    <style>
+        body {
+            display: block;
+            width: 300px;
+            margin: 20rem auto;
+            font-size: 20px;
+            background-color: azure;
+        }
+    </style>
+
+<body>
+    <h3>SWITCH CASE</h3>
+    <input type="text" id="number1" placeholder="Random Letter" maxlength="1">
+    <button onclick="getVowel_con()">Check Here</button>
+    <div id="show1"></div>
+    <br>
+
+    <input type="number" id="accept_numbers1" placeholder="Input Number">
+    <input type="number" id="accept_numbers2" placeholder="Input Number">
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calc()">Check Here</button>
+    <input type="text" id="result"/>
+    <div id="show2"></div>
+</body>
+
+
+<script>
+function getVowel_con(){
+    let a = (document.getElementById("number1").value).toLowerCase();
+    switch(a){
+        case "a":
+        case "e":
+        case "i":
+        case "o":
+        case "u":
+            document.getElementById("show1").innerHTML = "the letter is vowel";
+            break;
+        default:
+            document.getElementById("show1").innerHTML = "the letter is consonant";
+            break;
+    }
+}
+</script>
+ 
+<script>
+    function calc(){
+        var accept_numbers1 = parseFloat(document.getElementById("accept_numbers1").value);
+        var accept_numbers2 = parseFloat(document.getElementById("accept_numbers2").value);
+        var operators = (document.getElementById("operators").value);
+
+        if(operators === "+"){
+            document.getElementById("result").value = accept_numbers1+accept_numbers2;
+        }
+        if(operators === "-"){
+            document.getElementById("result").value = accept_numbers1-accept_numbers2;
+        }
+        if(operators === "*"){
+            document.getElementById("result").value = accept_numbers1*accept_numbers2;
+        }
+        if(operators === "/"){
+            document.getElementById("result").value = accept_numbers1/accept_numbers2;
+        }
+    }
+
+
+
+</script>
+
+
+
+
+
+</html>
