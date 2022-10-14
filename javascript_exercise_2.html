@@ -33,7 +33,62 @@
     <button onclick="calc()">Check Here</button>
     <input type="text" id="result"/>
     <div id="show2"></div>
+
+    <br>
+    <h3>Month</h3>
+    <input type="month" onchange="getMonthDateName(event)"/>
+    <div id="result1"></div>
+
 </body>
+<script>
+    function getMonthDateName(e){
+        let date = new Date(e.currentTarget.value);
+        let month = date.getMonth();
+        
+
+        switch(month){
+            case 0:
+                document.getElementById("result1").innerHTML = "January";
+                break;
+            case 1:
+                document.getElementById("result1").innerHTML = "February";
+                break;
+            case 2:
+                document.getElementById("result1").innerHTML = "March";
+                break;
+            case 3:
+                document.getElementById("result1").innerHTML = "April";
+                break;
+            case 4:
+                document.getElementById("result1").innerHTML = "May";
+                break;
+            case 5:
+                document.getElementById("result1").innerHTML = "June";
+                break;
+            case 6:
+                document.getElementById("result1").innerHTML = "July";
+                break;
+            case 7:
+                document.getElementById("result1").innerHTML = "August";
+                break;
+            case 8:
+                document.getElementById("result1").innerHTML = "September";
+                break;
+            case 9:
+                document.getElementById("result1").innerHTML = "October";
+                break;
+            case 10:
+                document.getElementById("result1").innerHTML = "November";
+                break;
+            case 11:
+                document.getElementById("result1").innerHTML = "December";
+                break;
+            case 12:
+                document.getElementById("result1").innerHTML = "Uknown Value";
+                break;
+    }
+}
+</script>
 
 
 <script>
@@ -73,13 +128,5 @@ function getVowel_con(){
             document.getElementById("result").value = accept_numbers1/accept_numbers2;
         }
     }
-
-
-
 </script>
-
-
-
-
-
 </html>
