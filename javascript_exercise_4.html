@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro To JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="./js/kodego.js"></script>
+    </head>
+    <style>
+        body {
+            display: block;
+            width: 300px;
+            margin: 20rem auto;
+            font-size: 20px;
+            background-color: azure;
+        }
+    </style>
+
+<body>
+ 
+            <h1>For Loop</h1>
+
+            <h2>Array Sort</h2>
+            <div id="result"></div>
+            <div id="result1"></div>
+            <div id="result2"></div>
+        
+</body>
+<script>
+
+
+    let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
+
+function countConsecutiveValue(list, consecutive=2){
+    let prevNumber = 0;
+    let totalConsecutive = 0;
+    let sequence = 0;
+
+    for(let i = 0; i < list.length; i++){
+        if(prevNumber == list[i]){
+            sequence++;
+        }
+        if(sequence == consecutive){
+            totalConsecutive++;
+            sequence = 1;
+            prevNumber = 0;
+        }else{
+            prevNumber = list[i];   
+        }
+    }
+        return totalConsecutive;
+    }
+
+
+document.getElementById("result").innerHTML = countConsecutiveValue(numbers);
+document.getElementById("result1").innerHTML = countConsecutiveValue(numbers, 3);
+document.getElementById("result2").innerHTML = countConsecutiveValue(numbers, 4) + " " + "consecutive";
+
+</script>
+</html>

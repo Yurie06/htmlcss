@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro To JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="./js/kodego.js"></script>
+    </head>
+    <style>
+        body {
+            display: block;
+            width: 300px;
+            margin: 20rem auto;
+            font-size: 20px;
+            background-color: azure;
+        }
+    </style>
+
+<body>
+    <h2>https://devdocs.io/javascript/</h2>
+
+            <h2>Machine Problem1</h2>
+            <div id="result" ></div>
+
+            <h2>Machine Problem2</h2>
+            <div id="result2" ></div>
+</body>
+<script>
+   let staff = [{name: "Oliver Queen", title: "CEO", gender: "male", age: 38, languages: ["english", "spanish"]}, 
+    {name: "Ben Hur", title: "Security consultant", gender: "male", age: 25, languages: ["latin", "italian"]}, 
+    {name: "Jessica Alba", title: "Admin Assistant", gender: "female", age: 23, languages: ["english", "spanish"]}, 
+    {name: "Pepper Piper", title: "Quality Assurance", gender: "female", age: 32, languages: ["english", "spanish"]},
+    {name: "Red Sullivan", title: "Project Manager", gender: "male", age: 27, languages: ["russian", "english"]},
+    {name:"Juan Dela Cruz", title: "Manager", age: 24, gender: "male", languages: ["russian", "french"]},
+    {name:"Anna Salvador", title: "Junior Dev", age: 21, gender: "female", languages: ["english", "french"]},
+    {name:"Mark Bautista", title: "Senior Fullstack Dev", age: 28, gender: "male", languages: ["russion", "spanish"]},
+    {name:"Micheal Garcia", title: "CEO", age: 40, gender: "male", languages: ["english", "latin"]}];
+
+
+        // -----Age Count-----
+
+    let ageCount = 0;
+            counter = 0;
+            while(counter < staff.length){
+
+                if(staff[counter].age >= 30){
+                    ageCount++;
+                }
+                    counter++;
+            }
+            console.log(ageCount);
+            document.getElementById("result").innerHTML = ageCount;
+
+            // ------- Count Language-------
+
+    let languageCount = 0;
+        counter = 0;
+            while(counter < staff.length){
+
+    let cnt = 0;
+            while (cnt<staff[counter].languages.length){
+            if(staff[counter].languages[cnt] == "spanish"){
+            languageCount++;
+            }
+            cnt++;
+            }
+            counter++;
+            }
+        
+            console.log("Language Spanish" + "" + languageCount);
+            document.getElementById("result2").innerHTML = languageCount;
+
+</script>
+</html>
