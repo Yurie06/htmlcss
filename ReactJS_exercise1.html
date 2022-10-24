@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro To JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="./js/kodego.js"></script>
+    </head>
+    <style>
+        body {
+            display: block;
+            width: 50px;
+            margin: 20rem auto;
+            font-size: 20px;
+            background-color: azure;
+        }
+
+    </style>
+
+<body>
+            <h2>ReactJS</h2>
+            <div id="result"></div>
+            <div id="result1"></div>
+            <div id="result2"></div>
+</body>
+<script>
+
+    class Furniture{
+        constructor(equipment, movable, color){
+            this.equipment = equipment;
+            this.movable = movable;
+            this.color = color;
+        }
+    }
+
+    class Bed extends Furniture{
+        constructor(isSleeping ){
+            super("Wood", "adjustable", "red")
+            this.isSleeping = isSleeping;
+        }
+    }
+    class Tables extends Furniture{
+        constructor(isImported){
+            super("iron", "eating-table", "black")
+            this.isImported = isImported;
+        }
+    }
+    class Chairs extends Bed{
+        constructor(isImported){
+            super(true);
+    }
+}
+
+   
+
+
+let itemsFurniture = new Bed(false);
+let listFurniture = new Tables();
+document.getElementById("result").innerHTML = itemsFurniture.equipment;
+document.getElementById("result1").innerHTML = listFurniture.color;
+document.getElementById("result2").innerHTML = listFurniture.movable;
+
+
+// let items1Furniture = new Chairs(Chairs);
+// document.getElementById("result2").innerHTML = items1Furniture.movable;
+
+
+// let items2Furniture = new Tables(Tables);
+// document.getElementById("result2").innerHTML = items2Furniture.equipment;
+
+
+</script>
+
+
+
+</html>
